@@ -1,0 +1,35 @@
+//- Это модуль шапки сайта
+include ../mixin/headerLink.pug
+header.header
+	.container.header-container
+		nav.header-nav
+			ul.header-nav-list
+				li.header-nav-list-item
+					//- Это условия срабатывает по тегу title
+					if title != 'Главная'
+						a(href='../../../index.html')
+							img.header-nav-list-item-logo(src='../../images/Logo1.png' alt='Логотип' title='Вернуться на главную' width='10')
+					if title == 'Главная'
+							img.header-nav-list-item-logo(src='assets/images/Logo1.png' alt='Логотип' title='Вернуться на главную' width='10')
+
+				li.header-nav-list-item
+					if title != 'Главная'
+						+HeaderLink('../pages/services.html' ,'header-nav-list-item-link', 'Услуги')
+					if title == 'Главная'
+						+HeaderLink('assets/pug/pages/services.html' ,'header-nav-list-item-link', 'Услуги')
+
+				li.header-nav-list-item
+					if title != 'Главная'
+						+HeaderLink('../pages/programms.html' ,'header-nav-list-item-link', 'Программы')
+					if title == 'Главная'
+						+HeaderLink('assets/pug/pages/programms.html' ,'header-nav-list-item-link', 'Программы')
+				li.header-nav-list-item
+					if title != 'Главная'
+						+HeaderLink('../pages/reporting.html' ,'header-nav-list-item-link', 'Сдача отчетности')
+					if title == 'Главная'
+						+HeaderLink('assets/pug/pages/reporting.html' ,'header-nav-list-item-link', 'Сдача отчетности')
+				li.header-nav-list-item
+					if title != 'Главная'
+						+HeaderLink('../pages/other.html' ,'header-nav-list-item-link', 'Разное')
+					if title == 'Главная'
+						+HeaderLink('assets/pug/pages/other.html' ,'header-nav-list-item-link', 'Разное')

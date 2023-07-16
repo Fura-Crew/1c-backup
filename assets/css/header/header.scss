@@ -1,0 +1,48 @@
+// стили шапки
+.header {
+  padding: 10px;
+  font-size: 1.3em;
+  background-color:white;
+}
+.header-nav{
+  display: flex;
+  justify-content:space-between;
+}
+.header-nav-list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap:20px;
+}
+.header-nav-list li {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+.header-nav-list li a{
+  text-decoration: none;
+  color: #b81f26;
+}
+
+.header-nav-list-item-link:hover{
+  color: #68282c;
+}
+
+.header-nav-list-item-logo {
+  width:100px;
+  cursor: pointer;
+}
+
+// Hk(ViqxO&6NczRRQd*
+
+// Стили для адаптивного хедера
+.mobile-btn{
+  display: none;
+}
+.mobile-nav{
+  display: none;
+}
+
+.mobile-navigation{
+  display: none;
+}

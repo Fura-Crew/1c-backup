@@ -1,0 +1,152 @@
+.hero-text {
+  margin-top: 20px;
+  padding: 70px;
+  background-color: #efda1b;
+}
+.hero-text .hero-text__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.hero-text .hero-text__inner .hero-text-main-heading {
+  font-size: 1.8em;
+  color: #b81f26;
+}
+.hero-text .hero-text__inner .hero-text-main-about-me {
+  color: #b81f26;
+  font-size: 1em;
+}
+.hero-text .hero-text__inner .hero-text-contacts-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+.hero-text .hero-text__inner .hero-text-contacts-list .hero-text-contacts-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  font-weight: bolder;
+  font-size: 1.3em;
+  letter-spacing: 2px;
+}
+.hero-text .hero-text__inner .hero-text-contacts-list .hero-text-contacts-item .hero-text-contacts-item-icon {
+  width: 10%;
+}
+.hero-text .hero-text__inner .hero-text-contacts-list .hero-text-contacts-item .hero-text-contacts-item-link {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-decoration: none;
+  color: black;
+}
+.hero-text .hero-text__inner .hero-text-contacts-list .hero-text-contacts-item .hero-text-contacts-item-link:hover {
+  color: rgb(105, 103, 103);
+}
+
+.our-services .our-services__container .our-services-heading {
+  font-size: 1.2em;
+}
+.our-services .our-services__container .our-services-heading .our-services-heading-text {
+  text-align: center;
+}
+.our-services .our-services__container .our-services-all-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+.our-services .our-services__container .our-services-card {
+  padding: 40px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  width: 40%;
+  border: 0.3px solid rgba(156, 135, 135, 0.2);
+  border-radius: 10px;
+}
+.our-services .our-services__container .our-services-card-icon {
+  width: 20%;
+}
+.our-services .our-services__container .our-services-card-text {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+.our-services .our-services-before-text {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.our-advantages {
+  background-color: #efda1b;
+  padding: 40px;
+}
+.our-advantages .our-advantages__container .our-advantages-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+.our-advantages .our-advantages__container .our-advantages-text ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+.our-advantages .our-advantages__container .our-advantages-text li {
+  list-style-type: disc;
+  margin-left: 3%;
+}
+
+.about-us {
+  margin-top: 100px;
+}
+.about-us .about-us__container .about-us-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+.about-us .about-us__container .about-us-text .about-us-link {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 20px 0;
+}
+
+.about-us-text h2 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}

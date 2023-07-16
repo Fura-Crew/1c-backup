@@ -1,0 +1,13 @@
+// стили подвала
+.footer__container {
+  display:flex;
+  justify-content: center;
+  .footer-logo {
+    width:6%;
+  }
+  
+  .author {
+    align-self: center;
+    font-size: 1em;
+  }
+}

@@ -1,0 +1,168 @@
+/* Общие стили для адаптации */
+
+@media (max-width:1000px) {
+  .header-logo{
+    display: none;
+  }
+  .mobile-navigation{
+    display: flex;
+    justify-content:space-between;
+
+  }
+  .header-nav-mobile-logo{
+  }
+  .mobile-btn{
+    margin-top: 30px;
+    position:relative;
+    z-index:2;
+    display: block;
+    background-color: red;
+    width:10%;
+    height: 10px;
+  }
+
+  .mobile-btn::before{
+    margin-top: -15px;
+    display: block;
+    content:"";
+    background-color: red;
+    width:100%;
+	  height:10px;
+  }
+
+  .mobile-btn::after{
+    margin-top:20px;
+    display: block;
+    content:"";
+    background-color: red;
+    width: 100%;
+	  height:10px;
+  }
+  .active-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    z-index:1;
+    position:absolute;
+    top:0;
+    left:0px;
+    bottom: 0;
+    width:0%;
+    padding: 100px;
+    background-color: rgba(0, 0, 0, 0.897);
+    /* Анимация */
+    animation: changeWidth 0.1s;
+    transition: width;
+    /* -------- */
+  }  
+    @keyframes changeWidth{
+      0%{
+        width:10%;
+      }
+
+      100%{
+        width:100%;
+      }
+
+
+      
+    }
+  
+
+
+  .active-nav a{
+    color:white;
+    text-decoration: none;
+    font-size:1.5em;
+  }
+  .header-mobile-nav-list{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+  }
+  .mobile-contacts::before{
+    display: block;
+    content: 'Контакты';
+    text-align: center;
+    width:100%;
+  }
+
+  .header-nav-list{
+    display: none;
+  }
+  .header-nav-list-mobile-contancts ul{
+    list-style-type: disc;
+  }
+  .header-nav-list-mobile-contancts a{
+    font-size: 1em;
+    position: relative;
+    bottom: -100px;
+  }
+
+  .hero-text {
+    padding: 70px 0;
+    background-color: #efda1b;
+  }
+  .hero-text__inner {
+    text-align: center;
+    font-size: 1.2em;
+  }
+
+  .hero-text-main{
+    margin:0 auto;
+  }
+  .hero-text-main-heading {
+    color: #b81f26;
+  }
+  
+  .hero-text-main-about-me {
+    color: #b81f26;
+  }
+
+  .hero-text-contacts{
+    display:none;
+  } 
+
+
+  .our-services{
+    font-size:1.5em;
+  }
+  .our-services-all-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .our-services-card{
+    display: flex;
+    justify-content: center;
+    width:100% !important;
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+  }
+  
+
+  .our-services-card-text{
+    align-self: center;
+  }
+  .our-services-before-text{
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  .our-advantages-text *, .about-us-text *{
+    font-size: 1.4em;
+  }
+
+  .footer__container{
+    display: flex;
+
+  }
+
+  .footer-logo {
+    width:10%;
+  }
+}

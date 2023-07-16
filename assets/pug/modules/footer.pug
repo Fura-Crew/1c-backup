@@ -1,0 +1,7 @@
+footer.footer
+	.container.footer__container
+		if title != 'Главная'
+			img.footer-logo(src='../../images/1clogo.svg' alt='Логотип')
+		if title == 'Главная'
+			img.footer-logo(src='assets/images/1clogo.svg' alt='Логотип')
+		span.author &copy; 2023
